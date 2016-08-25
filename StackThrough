@@ -1,0 +1,13 @@
+def world():
+    print('world')
+    raise Exception("argh")
+
+def hello():
+    print('hello')
+    world()
+
+def main():
+    print('main')
+    hello()
+
+main()

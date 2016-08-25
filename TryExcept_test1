@@ -1,0 +1,9 @@
+def add_100(text):
+    number = int(text) + 100
+    return number
+
+try:
+    number = add_100('hello')
+
+except (TypeError, ValueError):
+    print('숫자가 없는 문자열이네요')

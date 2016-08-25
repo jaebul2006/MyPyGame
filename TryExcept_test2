@@ -1,0 +1,12 @@
+def add_100(text):
+    number = int(text) + 100
+    return number
+
+try:
+    number = add_100('hello')
+except TypeError:
+    pirnt('문자열이나 숫자만 주세요')
+except ValueError:
+    print('숫자가 없는 문자열')
+except Exception:
+    print('모르겠지만 예외')

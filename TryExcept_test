@@ -1,0 +1,14 @@
+def add_100(text):
+    number = int(text) + 100
+    return number
+
+try:
+    number = add_100('100')
+except TypeError:
+    print('숫자만 주세요')
+except ValueError:
+    print('값이 이상함')
+else:
+    print('잘 더했어요')
+finally:
+    print('잘가요')
